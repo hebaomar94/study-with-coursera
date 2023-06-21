@@ -55,3 +55,30 @@ time += " \(timezone)"
 print (time)
 let shortDay = day.prefix(3)
 print ("today is \(shortDay)")
+--------------
+let morningTemperature = 70
+let eveningTemperature = 80
+
+if morningTemperature < eveningTemperature {
+    print( "the morning’s weather report to the console")
+} else {
+    print( "the evening’s weather report to the console")
+}
+let temperatureDegree = "Fahrenheit"
+if temperatureDegree == "Fahrenheit" {
+    print("fahrenheit")
+} else {
+    print ("celsius")
+
+}
+
+if temperatureDegree == "Celsius" || temperatureDegree == "Fahrenheit" {
+  print("The weather app is configured properly.")
+} else {
+  print("The weather app isn't configured properly.")
+}
+switch temperatureDegree {
+    case "Fahrenheit": print("The weather app is configured for the US.")
+    case "Celsius": print("The weather app is configured for Europe.")
+    default: print("The weather app has an unknown configuration.")
+}
