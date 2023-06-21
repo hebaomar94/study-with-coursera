@@ -21,6 +21,31 @@ let day = "Monday"
 print ("today is \(day)") //string interpolation
 let hour = "6"
 let minutes = "15"
+---------
+let language = "English"
+if language == "English" {
+  print("The default language is set to English.")
+} else if language == "Spanish" {
+  print("The default language is set to Spanish.")
+} else {
+  print("The default language has not been configured yet.")
+}
+---
+//switch
+switch language {
+    case "English": print("The default language is set to English.")
+    case "Spanish": print("The default language is set to Spanish.")
+    default: print("The default language has not been configured yet.")
+}
+
+let language = "English"
+switch language {
+    case "English": print("The default language is set to English.")
+    case "Spanish": print("The default language is set to Spanish.")
+    default: break
+}
+-----------
+
 let period = "PM"
 var time = hour + ":" + minutes + " " + period
 print(time)
