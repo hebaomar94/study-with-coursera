@@ -17,3 +17,16 @@ print("The level average score is \(levelAverageScore)")
 let averageLevelScore = Double(levelScoreDifference) / Double(levels)
 print("the correct level average score is \(averageLevelScore)")
 ------------------
+let day = "Monday"
+print ("today is \(day)") //string interpolation
+let hour = "6"
+let minutes = "15"
+let period = "PM"
+var time = hour + ":" + minutes + " " + period
+print(time)
+print( "its \(time) on \(day)" )
+let timezone = "PST"
+time += " \(timezone)"
+print (time)
+let shortDay = day.prefix(3)
+print ("today is \(shortDay)")
