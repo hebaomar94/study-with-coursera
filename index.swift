@@ -106,3 +106,22 @@ repeat {
 } while firstDice != secondDice
 print("You rolled a double \(firstDice).")
 
+//task 
+let levels = 10
+let freeleevels = 4
+let bonuslevel = 3
+
+for level in 1...levels {
+    if level == bonuslevel {
+        print("skip \(bonuslevel) ")
+        continue
+    }
+    print ("play level \(level)")
+    if level == freeleevels {
+     
+        
+       print( "You have played all \(freeleevels) free levels. Buy the game to play the remaining \(levels - freeleevels) levels.")
+    }
+}
+
+
