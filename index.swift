@@ -82,3 +82,27 @@ switch temperatureDegree {
     case "Celsius": print("The weather app is configured for Europe.")
     default: print("The weather app has an unknown configuration.")
 }
+
+//for..loop ..reapeat block of code set num of times
+for dice in 1...6 {
+    print("Roll a \(dice).")
+}
+
+//while loop repeat while condition is true 
+var firstDice = Int.random(in: 1...6)
+var secondDice = Int.random(in: 1...6)
+while firstDice != secondDice {
+  firstDice = Int.random(in: 1...6)
+  secondDice = Int.random(in: 1...6)
+}
+print("You rolled a double \(firstDice).")
+
+// reapeating while (exexute loop first befor the condition )
+var firstDice = 0
+var secondDice = 0
+repeat {
+  firstDice = Int.random(in: 1...6)
+  secondDice = Int.random(in: 1...6)
+} while firstDice != secondDice
+print("You rolled a double \(firstDice).")
+
