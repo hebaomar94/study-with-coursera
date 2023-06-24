@@ -189,3 +189,12 @@ if levelScores.count == freeLevels {
   levelScores = []
   print("Game restarted!")
 }
+//-----------------------tuples-----------------
+let credentials = ( "" ,  -1111)
+let fullCredentials = (password: "pass", passcode: 1111)
+
+if credentials.0 == "" || credentials.1 < 0 {
+    print("invaild")
+} else{
+    print("the user name is\(credentials.0)")
+}
