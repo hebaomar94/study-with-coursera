@@ -202,3 +202,10 @@ if fullCredentials.password == "" || fullCredentials.passcode < 0 {
 } else {
   print("The password is \(fullCredentials.password) and the passcode is \(fullCredentials.passcode).")
 }
+//loop through dictionaries
+
+let fruit = ["Bananas":2, "Apples":5, "Oranges":3]
+
+for (fruitName, fruitCount) in fruit {
+
+print("There are \(fruitCount) \(fruitName) left.")
