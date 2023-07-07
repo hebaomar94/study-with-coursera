@@ -320,7 +320,7 @@ spendTenGoldBars(from: &goldBars) { goldBars in
        /*structure method
 struct Name {
   //properties 
-let name = name
+let name: String
 
   //function
   //initial method
