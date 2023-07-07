@@ -305,3 +305,14 @@ let unlockTreasureChest = {( inventory: inout Int) -> Void in
 }
 unlockTreasureChest (&goldBars)
 print(goldBars)
+//Use functions to modularize a program
+var goldBars = 100
+func spendTenGoldBars(from inventory: inout Int, completion: (Int) -> Void) {
+  inventory -= 10
+  completion(inventory)
+}
+print("You had \(goldBars) gold bars.")
+spendTenGoldBars(from: &goldBars) { goldBars in
+  print("You spent ten gold bars.")
+  print("You have \(goldBars) gold bars.")
+}
