@@ -291,4 +291,7 @@ print(goldBars)
 /*In Swift, when you pass a variable as an inout argument to a function, 
 you need to use the & symbol before the variable name to indicate that you want to pass the variable itself and allow the function to 
 modify its value. */
+//----
+//Closures are a self contained block of functionality that can be passed around and used in your code.
+
 
