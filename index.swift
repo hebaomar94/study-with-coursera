@@ -294,4 +294,14 @@ modify its value. */
 //----
 //Closures are a self contained block of functionality that can be passed around and used in your code.
 
+let letters = ["H" , "E" , "X" , "A"]
+let myCollection = letters.sorted(by: { (string1: String, string2: String) -> Bool in return string1 < string2 } )
 
+// returns ["A" , "E" , "H" , "X"] 
+//pracise using closures
+var goldBars = 0
+let unlockTreasureChest = {( inventory: inout Int) -> Void in
+    inventory += 100
+}
+unlockTreasureChest (&goldBars)
+print(goldBars)
