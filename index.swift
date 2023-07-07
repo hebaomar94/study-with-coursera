@@ -316,3 +316,13 @@ spendTenGoldBars(from: &goldBars) { goldBars in
   print("You spent ten gold bars.")
   print("You have \(goldBars) gold bars.")
 }
+
+       /*structure method
+struct Name {
+  //properties 
+let name = name
+
+  //function
+  //initial method
+  init (name: ,..) */
+
