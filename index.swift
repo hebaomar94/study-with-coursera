@@ -325,4 +325,20 @@ let name: String
   //function
   //initial method
   init (name: ,..) */
+//mutating method
+       struct TableReservation {
+    var name: String
+    let tabelnumber: Int
+    
+    mutating func  updateBooking (updatedName: String){
+    name = updatedName
+    }
+    
+
+}
+
+var jonBooking = TableReservation(name: "john", tabelnumber: 1)
+print(jonBooking)
+jonBooking.updateBooking(updatedName: "Maria")
+print(jonBooking)
 
