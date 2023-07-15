@@ -84,6 +84,7 @@ switch temperatureDegree {
 }
 
 //for..loop ..reapeat block of code set num of times
+
 for dice in 1...6 {
     print("Roll a \(dice).")
 }
