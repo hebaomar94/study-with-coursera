@@ -6,6 +6,7 @@ print("The game score is \(gameScore)")
 var levelBonusScore = 10.0
 levelBonusScore = 20
 print("The level bouns score is \(levelBonusScore)")
+
 gameScore += Int(levelBonusScore) //type casting
 print("The game finial score is \(gameScore)")
 let levelLowesScore = 50
